@@ -1,0 +1,129 @@
+/* DeliveryFeeCalculator.css */
+/* Styles for screens smaller than 500px */
+@media (max-width: 500px) {
+  .calculateForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+  label, input {
+    width: 25%;
+    margin-bottom: 10px;
+  }
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 500px) {
+  .calculateForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  label {
+    width: 30%;
+  }
+  input {
+    width: 70%;
+  }
+  button {
+    width: auto;
+  }
+}
+
+body {
+  background-image: url(../public/wolt.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+.calculateForm {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px lightblue;
+}
+
+.calculateForm div {
+  display: inline-flex;
+  align-items: baseline;
+  margin: 0.7em 0;
+}
+
+
+.headerTitle{
+  margin: 5px;
+  text-align: center;
+  color: rgb(143, 179, 191);
+}
+label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+  }
+  
+input[type="number"],
+input[type="float"],
+input[type="datetime-local"] {
+  width: 300px;
+  height: 40px;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+}
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.calculateButton {
+  outline: 0;
+  grid-gap: 8px;
+  align-items: center;
+  background: 0 0;
+  border: 1px solid #000;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  flex-shrink: 0;
+  font-size: 16px;
+  gap: 8px;
+  justify-content: center;
+  line-height: 1.5;
+  overflow: hidden;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: all .24s ease-out;
+  white-space: nowrap;
+}
+  button:hover {
+      box-shadow: 5px 5px 0 lightblue;
+      transform: translate(-5px,-5px);
+  }
+  :focus-visible{
+      outline-offset: 1px;
+  }
+
+p {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+  border: 1px lightblue;
+}
+
+
